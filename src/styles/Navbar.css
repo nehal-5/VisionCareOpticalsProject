@@ -1,0 +1,51 @@
+.vclogo img {
+    height: 60px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3px 3%;
+    background: var(--color-background);
+    backdrop-filter: blur(12px);
+    --webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 9px 14px rgba(0, 0, 0, 0.459);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px
+}
+
+nav ul li a {
+    color: var(--color-primary);
+    text-decoration: none;
+    position: relative;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -3px;
+    left: 0;
+    background-color: #f6ba02;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+   width: 100%;
+}
+
