@@ -49,3 +49,68 @@ nav ul li a:hover::after {
    width: 100%;
 }
 
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: var(--color-primary);
+    border-radius: 2px;
+    transition: all 0.3s ease;
+}
+
+.hamburger.open span:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+}
+
+/* Responsiveness */
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .navLinks {
+        position: absolute;
+        background: var(--color-background);
+        backdrop-filter: blur(12px);
+        top: 70px;
+        right: 0;
+        flex-direction: column;
+        align-items: start;
+        gap: 20px;
+        padding: 20px;
+        border-radius: 10px;
+        display: none;
+    }
+
+    .navLinks.open {
+        display: flex;
+    }
+
+    .navLinks li {
+        margin: 10px 0;
+    }
+    
+}
+
+
+
+
+
+
