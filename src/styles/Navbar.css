@@ -97,6 +97,7 @@ nav ul li a:hover::after {
         padding: 20px;
         border-radius: 5px;
         display: none;
+        font-weight: 600;
     }
 
     .navLinks.open {
