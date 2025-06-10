@@ -1,0 +1,101 @@
+/* Contact */
+
+/* Contact Section */
+#contact {
+    padding: 60px 5%;
+    background: var(--color-background);
+    text-align: center;
+  }
+  
+  #contact h2 {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 20px;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    flex: 1;
+    text-align: left;
+    background: var(--color-secondary);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--color-muted);
+  }
+  
+  .contact-info p {
+    font-size: 1.1rem;
+    color: var(--color-muted);
+    margin: 5px 0;
+  }
+  
+  .branch {
+    margin-bottom: 20px;
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #f6ba02;
+    border-radius: 5px;
+  }
+
+  .branch p {
+    color: var(--color-text);
+  }
+  
+  /* Owner Info */
+  /* Owner Info Section */
+  .owner-info {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ensures text is on the left, image on the right */
+    border: 2px solid var(--color-background);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .owner-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: var(--color-primary);
+  }
+  
+  /* Square Image & Right Alignment */
+  .owner-info img {
+    width: 200px; /* Increased size */
+    height: 200px; /* Making it a perfect square */
+    object-fit: cover;
+    border-radius: 8px; /* Optional: Keeps a soft square shape */
+    order: 2; /* Moves the image to the right */
+  }
+  
+  /* Owner Text */
+  .owner-text {
+    text-align: left;
+    flex: 1;
+    order: 1; /* Ensures the text stays on the left */
+    color: var(--color-muted);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+  }
+  
