@@ -22,15 +22,15 @@ const Appointment = () => {
               value="274c0f5b-93d6-4fbb-87d5-a7cdd9ef0bf3"
             />
 
-            {/* Optional: Subject of the email */}
+            {/* Optional: Subject of the email 
             <input
               type="hidden"
               name="subject"
               value="New Eye Test Appointment"
-            />
+            />*/}
 
             {/* Optional: Redirect after submit */}
-            {/* <input type="hidden" name="redirect" value="https://yourwebsite.com/thank-you" /> */}
+            <input type="hidden" name="redirect" value="https://vision-care-opticals.vercel.app/" />
 
             <div className="form-group">
               <label htmlFor="name">Full Name:</label>
