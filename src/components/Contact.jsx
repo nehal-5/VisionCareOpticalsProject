@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Contact.css'; // Make sure your CSS file is correctly named and imported
+import '../styles/Contact.css';
 import ownerImage from '/assets/owner3.jpg'; // 
 
 const Contact = () => {

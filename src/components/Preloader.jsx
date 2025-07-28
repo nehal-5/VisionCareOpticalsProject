@@ -1,4 +1,3 @@
-// src/components/Preloader.jsx
 import React from 'react';
 import '../styles/Preloader.css';
 

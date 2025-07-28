@@ -10,7 +10,7 @@ function App() {
     // Simulate loading time (e.g., 2s)
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // You can change this to wait for real data or assets
+    }, 2000); 
 
     return () => clearTimeout(timer);
   }, []);
